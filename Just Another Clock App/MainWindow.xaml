@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Just_Another_Clock_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="300">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Toolbar -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <!-- Clock -->
+                <ColumnDefinition/>
+                <!-- Timer -->
+                <ColumnDefinition/>
+                <!-- Alarm -->
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Clock" Grid.Column="0"/>
+            <Button Content="Timer" Grid.Column="1"/>
+            <Button Content="Alarm" Grid.Column="2"/>
+        </Grid>
     </Grid>
 </Window>
