@@ -7,24 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="300">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
-        <!-- Toolbar -->
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <!-- Clock -->
-                <ColumnDefinition/>
-                <!-- Timer -->
-                <ColumnDefinition/>
-                <!-- Alarm -->
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Button Content="Clock" Grid.Column="0"/>
-            <Button Content="Timer" Grid.Column="1"/>
-            <Button Content="Alarm" Grid.Column="2"/>
-        </Grid>
+        <TabControl>
+            <TabItem Header="Часы">
+                <TextBox>Clock</TextBox>
+            </TabItem>
+            <TabItem Header="Таймер">
+                <TextBox>Timer</TextBox>
+            </TabItem>
+            <TabItem Header="Секундомер">
+                <TextBox>Stopwatch</TextBox>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
